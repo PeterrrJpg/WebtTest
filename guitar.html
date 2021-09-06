@@ -29,10 +29,18 @@
                 line-height: 30px;
             }
 
+            #vid {
+                text-align: center;
+            }
+
             #grid {
                 display: grid;
                 grid-template-columns: 150px 1fr;
                 border-bottom: 2px solid gray;
+            }
+
+            #image {
+                text-align: center;
             }
 
             .active {
@@ -42,22 +50,31 @@
     </head>
     
     <body>
-        <h1><a href="index.html" title="Homepage" class="active">My hobbies</a></h1>
+        <h1><a href="index.html" title="Homepage">My hobbies</a></h1>
 
         <div id="grid">
             <ol>
                 <li><a href="cardistry.html" title="Cardistry">Cardistry</a></li>
-                <li><a href="guitar.html" title="Guitar">Guitar</a></li>
+                <li><a href="guitar.html" title="Guitar" class="active">Guitar</a></li>
                 <li><a href="basketball.html" title="Basketball">Basketball</a></li>
             </ol>
     
             <div>
-                <p>ㅎㅇㅎㅇ 우헤헤헿</p>
+                <p>The <a href="https://en.wikipedia.org/wiki/Guitar" title="Wikipedia" style="color: indianred;"><u>guitar</u></a> is a fretted <strong>musical instrument</strong> that typically has six strings.</p>
 
-                <p>나님 여기 "강림"</p>
+                <div id="image">
+                    <img src="guitar.jpg" width="450" height="300">
+                </div>
+
+                <p>띠리링 따따다따 딴다다다</p>
             </div>
         </div>
         
+        <p id="vid">
+            <iframe width="450" height="300" src="https://www.youtube.com/embed/o2f519eTDFQ" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+
         <div id="disqus_thread"></div>
         <script>
             /**

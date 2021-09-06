@@ -29,10 +29,18 @@
                 line-height: 30px;
             }
 
+            #vid {
+                text-align: center;
+            }
+
             #grid {
                 display: grid;
                 grid-template-columns: 150px 1fr;
                 border-bottom: 2px solid gray;
+            }
+
+            #image {
+                text-align: center;
             }
 
             .active {
@@ -42,22 +50,34 @@
     </head>
     
     <body>
-        <h1><a href="index.html" title="Homepage" class="active">My hobbies</a></h1>
+        <h1><a href="index.html" title="Homepage">My hobbies</a></h1>
 
         <div id="grid">
             <ol>
                 <li><a href="cardistry.html" title="Cardistry">Cardistry</a></li>
                 <li><a href="guitar.html" title="Guitar">Guitar</a></li>
-                <li><a href="basketball.html" title="Basketball">Basketball</a></li>
+                <li><a href="basketball.html" title="Basketball" class="active">Basketball</a></li>
             </ol>
     
             <div>
-                <p>ㅎㅇㅎㅇ 우헤헤헿</p>
+                <p><a href="https://en.wikipedia.org/wiki/Basketball" target="_blank" title="Wikipedia" style="color: indianred;"><u>Basketball</u></a> is a <strong>team sport</strong> in which two teams, most commonly of five players each, 
+                    opposing one another on a rectangular court, compete with the primary objective of 
+                    shooting a basketball through the defender's hoop while preventing the opposing team 
+                    from shooting through their own hoop.</p>
 
-                <p>나님 여기 "강림"</p>
+                <div id="image">
+                    <img src="bball.jpg" width="450" height="300">
+                </div>
+
+                <p style="margin-top:45px">I'm a sharp shooter XD</p>
             </div>
         </div>
         
+        <p id="vid">
+            <iframe width="450" height="300" src="https://www.youtube.com/embed/Hkc0ji-b4xA" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+
         <div id="disqus_thread"></div>
         <script>
             /**

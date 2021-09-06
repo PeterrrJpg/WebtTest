@@ -29,10 +29,18 @@
                 line-height: 30px;
             }
 
+            #vid {
+                text-align: center;
+            }
+
             #grid {
                 display: grid;
                 grid-template-columns: 150px 1fr;
                 border-bottom: 2px solid gray;
+            }
+
+            #image {
+                text-align: center;
             }
 
             .active {
@@ -42,22 +50,42 @@
     </head>
     
     <body>
-        <h1><a href="index.html" title="Homepage" class="active">My hobbies</a></h1>
+        <h1><a href="index.html" title="Homepage">My hobbies</a></h1>
 
         <div id="grid">
             <ol>
-                <li><a href="cardistry.html" title="Cardistry">Cardistry</a></li>
+                <li><a href="cardistry.html" title="Cardistry" class="active">Cardistry</a></li>
                 <li><a href="guitar.html" title="Guitar">Guitar</a></li>
                 <li><a href="basketball.html" title="Basketball">Basketball</a></li>
             </ol>
     
             <div>
-                <p>ㅎㅇㅎㅇ 우헤헤헿</p>
+                <p><a href="https://en.wikipedia.org/wiki/Cardistry" target="_blank" title="Wikipedia" style="color:indianred;"><u>Cardistry</u></a> 
+                    is the performance <strong>art</strong> 
+                    of card flourishing.</p>
 
-                <p>나님 여기 "강림"</p>
+                <div id="image">
+                    <img src="card.jpg" width="450" height="300">
+                </div>
+
+                <p style="margin-top:45px">Cardistry is a portmanteau of “card” and “artistry.” 
+                It involves the use of hands to create cuts, displays, fans, 
+                patterns, and sequences through the use of playing cards. 
+                Various arm-spreads, cuts, shuffles, and springs can be used. 
+                The intent is to create a captivating motion and beautiful 
+                display. The effects are limited only by the types of cards 
+                used, the imagination, and the degree of manual dexterity of 
+                the performer. The presentation is typically neither 
+                “illusionary” nor purportedly “magic”; rather, it is more 
+                like juggling, mime, or similar entertaining activities.</p>
             </div>
         </div>
         
+        <p id="vid">
+            <iframe width="450" height="300" src="https://www.youtube.com/embed/pgZJNeuU_14" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+
         <div id="disqus_thread"></div>
         <script>
             /**
