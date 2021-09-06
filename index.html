@@ -3,33 +3,79 @@
     <head>
         <title>Seo's Secret Hobby</title>
         <meta charset="utf-8">
+        <style>
+            body {
+                margin: 0;
+            }
+
+            h1 {
+                font-size: 45px;
+                text-align: center;
+                border-bottom: 2px solid gray;
+                margin: 0;
+                padding: 20px;
+            }
+
+            ol {
+                border-right: 2px solid gray;
+                width: 90px;
+                margin: 0;
+                padding-top: 20px;
+                line-height: 30px;
+            }
+
+            #vid {
+                text-align: center;
+            }
+
+            #grid {
+                display: grid;
+                grid-template-columns: 150px 1fr;
+                border-bottom: 2px solid gray;
+            }
+            #image {
+                text-align: center;
+            }
+        </style>
     </head>
     
     <body>
         <h1>My hobbies</h1>
-        <ol>
-            <li>Cardistry</li>
-            <li>Guitar</li>
-            <li>Basketball</li>
-        </ol>
-        <p>
+
+        <div id="grid">
+            <ol>
+                <li>Cardistry</li>
+                <li>Guitar</li>
+                <li>Basketball</li>
+            </ol>
+    
+            <div>
+                <p><a href="https://en.wikipedia.org/wiki/Cardistry" target="_blank" title="Wikipedia">Cardistry</a> 
+                    is the performance <strong><u>art</u></strong> 
+                    of card flourishing.</p>
+
+                <div id="image">
+                    <img src="sample.jpg" width="450" height="300">
+                </div>
+
+                <p style="margin-top:45px">Cardistry is a portmanteau of “card” and “artistry.” 
+                It involves the use of hands to create cuts, displays, fans, 
+                patterns, and sequences through the use of playing cards. 
+                Various arm-spreads, cuts, shuffles, and springs can be used. 
+                The intent is to create a captivating motion and beautiful 
+                display. The effects are limited only by the types of cards 
+                used, the imagination, and the degree of manual dexterity of 
+                the performer. The presentation is typically neither 
+                “illusionary” nor purportedly “magic”; rather, it is more 
+                like juggling, mime, or similar entertaining activities.</p>
+            </div>
+        </div>
+        
+        <p id="vid">
             <iframe width="450" height="300" src="https://www.youtube.com/embed/7T7r_oSp0SE?list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb" 
             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </p>
-        <p><a href="https://en.wikipedia.org/wiki/Cardistry" target="_blank" title="Wikipedia">Cardistry</a> 
-            is the performance <strong><u>art</u></strong> 
-            of card flourishing.</p>
-        <img src="sample.jpg" width="450" height="300">
-        <p style="margin-top:45px">Cardistry is a portmanteau of “card” and “artistry.” 
-        It involves the use of hands to create cuts, displays, fans, 
-        patterns, and sequences through the use of playing cards. 
-        Various arm-spreads, cuts, shuffles, and springs can be used. 
-        The intent is to create a captivating motion and beautiful 
-        display. The effects are limited only by the types of cards 
-        used, the imagination, and the degree of manual dexterity of 
-        the performer. The presentation is typically neither 
-        “illusionary” nor purportedly “magic”; rather, it is more 
-        like juggling, mime, or similar entertaining activities.</p>
+
         <div id="disqus_thread"></div>
         <script>
             /**
@@ -49,6 +95,7 @@
             })();
         </script>
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
         <!--Start of Tawk.to Script-->
         <script type="text/javascript">
             var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -62,5 +109,6 @@
             })();
         </script>
         <!--End of Tawk.to Script-->
+
     </body>
 </html>
