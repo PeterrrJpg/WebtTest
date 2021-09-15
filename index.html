@@ -4,6 +4,20 @@
         <title>Seo's Secret Hobby</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
+        <script>
+            function nightDayHandler(self) {
+                var target = document.querySelector('body');
+                if (self.value === 'night') {
+                    target.style.backgroundColor = 'black';
+                    target.style.color = 'white';
+                    self.value = 'day';
+                } else {
+                    target.style.backgroundColor = 'white';
+                    target.style.color = 'black';
+                    self.value = 'night';
+                }
+            }
+        </script>
     </head>
     
     <body>
@@ -25,16 +39,7 @@
 
         <input id="night_day" type="button" value="night" 
         onclick="
-            var target = document.querySelector('body');
-            if (this.value === 'night') {
-                target.style.backgroundColor = 'black';
-                target.style.color = 'white';
-                this.value = 'day';
-            } else {
-                target.style.backgroundColor = 'white';
-                target.style.color = 'black';
-                this.value = 'night';
-            }
+            nightDayHandler(this);
         "
         >
         
